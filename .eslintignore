@@ -1,0 +1,8 @@
+/node_modules
+/cypress/*
+/build
+.storybook
+/public
+
+# configuration
+craco.config.js

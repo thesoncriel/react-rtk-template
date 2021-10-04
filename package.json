@@ -1,0 +1,80 @@
+{
+  "name": "react-ts-template",
+  "version": "2.0.0",
+  "private": true,
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.6.1",
+    "antd": "^4.16.13",
+    "axios": "^0.21.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.5",
+    "react-router": "^5.2.1",
+    "react-router-dom": "^5.3.0",
+    "styled-components": "^5.3.1",
+    "ts-fe-toolkit": "^0.1.6"
+  },
+  "devDependencies": {
+    "@craco/craco": "^6.3.0",
+    "@storybook/addon-actions": "^6.3.8",
+    "@storybook/addon-essentials": "^6.3.8",
+    "@storybook/addon-links": "^6.3.8",
+    "@storybook/node-logger": "^6.3.8",
+    "@storybook/preset-create-react-app": "^3.2.0",
+    "@storybook/react": "^6.3.8",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "@types/jest": "^24.9.1",
+    "@types/node": "^12.20.27",
+    "@types/react": "^16.14.15",
+    "@types/react-dom": "^16.9.14",
+    "@types/react-redux": "^7.1.18",
+    "@types/react-router": "^5.1.16",
+    "@types/react-router-dom": "^5.3.0",
+    "@types/styled-components": "^5.1.14",
+    "@typescript-eslint/eslint-plugin": "^4.32.0",
+    "@typescript-eslint/parser": "^4.32.0",
+    "env-cmd": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.26.1",
+    "prettier": "2.4.1",
+    "react-scripts": "4.0.3",
+    "typescript": "~4.1.5"
+  },
+  "scripts": {
+    "start": "env-cmd -f .env.local craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "lint": "eslint ./src",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
+  },
+  "eslintConfig": {
+    "extends": "react-app",
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
